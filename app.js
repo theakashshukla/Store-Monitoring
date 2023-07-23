@@ -43,8 +43,11 @@ app.get('/api/v1/stores/:store_id/inactive_periods', (req, res) => {
   });
 });
 
+app.get('/' , (req, res) => res.json({msg: 'Welcome to the API'}));
+
 // Start the server
 const port = 3000;
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
+
